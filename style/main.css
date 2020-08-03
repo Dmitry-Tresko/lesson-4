@@ -18,9 +18,11 @@ body {
 }
 
 .header {
+    width: 1401px;
     height: 71px;
     background-color: #000000;
-    position: relative;
+    position: fixed;
+    z-index: 5;
 }
 
 .header__axit_logo {
@@ -34,7 +36,7 @@ body {
     display: inline-block;
     position: absolute;
     top: calc(50% - 7.5px);
-    margin-left: 592px;
+    margin-left: 582px;
 }
 
 .header__decor_features {
@@ -115,6 +117,7 @@ body {
 .social {
     height: 106px;
     background-color: #FFFFFF;
+    position: relative;
 }
 
 .social__text_block {
@@ -143,11 +146,24 @@ body {
 }
 
 .social__networks_block {
+    width: 634px;
+    height: 46px;
     display: inline-block;
+    margin-left: 107px;
+    position: absolute;
+    top: calc(50% - 23px);
 }
 
 .social__list {
-    background: url(../img/social_network_icons.png) no-repeat;
+    background: url(../img/social_network_big.png) no-repeat;
+    height: 46px;
+}
+
+.social__item {
+    display: inline-block;
+    width: 87px;
+    height: 46px;
+    list-style: none;
 }
 
 .tabs {
@@ -560,17 +576,80 @@ body {
     color: #86878B;
 }
 
+.contact__form {
+    width: 527px;
+    margin-top: 80px;
+    display: inline-block;
+}
+
+.contact__item_top {
+    margin-bottom: 30px;
+}
+
+.contact__item {
+    height: 31px;
+    width: 100%;
+    border: none;
+    display: block;
+    font-size: 14px;
+    color: #BDBDBD;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 2px solid;
+}
+
+.contact__item_bottom {
+    margin-top: 30px;
+
+}
+
+.contact__area {
+    width: 527px;
+    height: 142px;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    color: #BDBDBD;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 2px solid;
+    margin-left: 62px;
+}
+
+.contact__btn {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3%;
+    background: orange;
+    width: 148px;
+    height: 46px;
+    margin-top: 43px;
+}
+
 .footer {
     height: 101px;
     background-color: #000000;
 }
 
-.footer__image_social_networks {
+.footer__social_block {
     display: block;
     margin: 0 auto;
     width: 317px;
     height: 23px;
     padding-top: 39px;
+}
+
+.footer__list {
+    background: url(../img/social_network_tiny.png) no-repeat;
+    height: 23px;
+}
+
+.footer__item {
+    width: 41px;
+    height: 23px;
+    list-style: none;
+    display: inline-block;
 }
 
 .footer__copyright {
